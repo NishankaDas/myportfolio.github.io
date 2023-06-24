@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishanka Das</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: rgb(255, 255, 255);
+            font-family: 'Playfair Display', serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background: rgb(162, 198, 160);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: right;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 40px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .lef {
+            margin: 20px;
+        }
+
+        .rig {
+            width: 30%;
+            font-size: 30px;
+        }
+
+        .green {
+            color: rgb(106, 163, 109);
+        }
+
+        .sec {
+            width: 925px;
+            height: 600px;
+            margin: 150px;
+
+
+        }
+
+        .bg {
+            background-image: url(bg.png );
+            width: 925px;
+            height: 600px;
+            margin: 150px;
+            opacity: .7;
+
+        }
+
+        .intro {
+
+            margin: 20px;
+
+
+            opacity: 1;
+        }
+
+        .intro p {
+            width: auto;
+            align-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0px;
+            margin: 200px;
+            border: 5px;
+            color: #000000;
+            font-weight: bold;
+            opacity: 1.0;
+        }
+
+        .thir img {
+            border-radius: 50%;
+        }
+
+        .thir img:hover {
+            background-color: rgb(162, 198, 160);
+        }
+
+        .thir h1 {
+            text-decoration: none;
+            color: #000000;
+            font-size: xx-large;
+        }
+
+        .thir h1:hover {
+            background-color: rgb(162, 198, 160);
+        }
+
+        .last {
+            margin: 20px;
+            background: rgb(162, 198, 160);
+            padding: auto;
+        }
+        .end{
+            margin: 200px;
+        }
+
+        footer {
+            width: 100%;
+
+            bottom: 0;
+            left: 0;
+            background: rgb(162, 198, 160);
+        }
+
+        .cont {
+            text-decoration: none;
+
+            display: flex;
+            padding: 20px;
+        }
+
+        .cont a {
+            color: black;
+        }
+
+        footer a {
+            transition: all 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="right">
+                <h1>Nishanka Das</h1>
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#res">Resume</a></li>
+                    <li><a href="#proj">Project</a></li>
+                    <li><a href="#Conta">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="rig">
+                <form aria-setsize="20px">Hi!</form> <br>
+                I am <span class="green">Nishanka</span>,<br>
+                Computer Science Student at Ramakrishna Mission
+                Vivekananda Centenary College
+            </div>
+            <div class="lef">
+                <img src="orgpic.jpeg" alt="Picture" width="500" align="center">
+
+            </div>
+        </section>
+        <section class="sec">
+            <a id="About">
+                <div class="bg">
+                    <h2 align=center>
+                        <div class="intro">
+                            <p>
+                                <font size="+3">Intro</font>
+                                <br><br>I am currently persuing an undergraduate degree at the esteemed institution
+                                as mentioned in my profile, I have practical knowledge in various programming
+                                languages likes C,C++,Python, R and HTML and CSS in Web Development.
+                                I am Phsychoinformatics enthusisat which I'm currently studying along with my college
+                                curriculum.
+                                I have also worked a bit using Arduino Uno .
+                            <h2>
+                        </div>
+                </div>
+            </a>
+        </section>
+        <section class="thir">
+            <a id="res">
+                <p align="center">
+                    <a href="NISHANKA DAS.pdf"><img src="vc1.png" alt="Resume" width="400px"><br></a>
+                    <h1 align="center">RESUME</h1>
+                </p>
+            </a>
+        </section>
+        <section class="end">
+            <a id="proj">
+                <img src="download.jpg" alt="Projects">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <div class="cont">
+            <a id="Conta">
+                <p>Contact<br>
+            </a>
+           
+            <a href="#">nishanka2004@gmail.com</a><br>
+            <a href="#">www.linkedin.com/in/nishanka-das-657476250</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
