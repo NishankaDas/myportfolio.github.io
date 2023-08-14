@@ -1,239 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishanka Das</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap"
-        rel="stylesheet">
+    <title>Portfolio</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
         body {
-            background: rgb(255, 255, 255);
-            font-family: 'Playfair Display', serif;
+            background-color: black;
         }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 50px;
-            background: rgb(162, 198, 160);
+        div {
+            text-align: center;
         }
 
-        nav ul {
-            display: flex;
-            justify-content: right;
+        div ul {
+            background-color: rgb(255, 255, 255);
         }
 
-        nav ul li {
+        div ul li {
+            text-decoration: none;
             list-style: none;
-            margin: 0 40px;
+            display: inline-block;
+            margin-right: 5%;
+
+
+
         }
 
-        nav ul li a {
-            color: black;
+        div ul li a {
+            color: rgb(255, 255, 255);
             text-decoration: none;
             transition: all 0.3s ease;
+            font-size: larger;
+            background-color: black;
+            padding: 5%;
+            border-radius: 25%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: x-large;
         }
 
-        nav ul li a:hover {
-            color: #ffffff;
-        }
-
-        section {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .lef {
-            margin: 20px;
-        }
-
-        .rig {
-            width: 30%;
-            font-size: 30px;
-        }
-
-        .green {
-            color: rgb(106, 163, 109);
-        }
-
-        .sec {
-            width: 925px;
-            height: 600px;
-            margin: 150px;
-
+        div ul li a:hover {
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #231557 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 1s linear infinite;
+            display: inline-block;
+            font-size: smaller;
 
         }
 
-        .bg {
-            background-image: url(bg.png );
-            width: 925px;
-            height: 600px;
-            margin: 150px;
-            opacity: .7;
+        .About {
+            margin: 10%;
+            color: aliceblue;
+
 
         }
 
-        .intro {
-
-            margin: 20px;
-
-
-            opacity: 1;
+        .About div div h3 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 200%;
+            text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
         }
 
-        .intro p {
-            width: auto;
-            align-content: center;
-            align-items: center;
-            position: absolute;
-            left: 0px;
-            margin: 200px;
-            border: 5px;
-            color: #000000;
-            font-weight: bold;
-            opacity: 1.0;
+        .About div div h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 250%;
+            letter-spacing: 10px;
+            text-shadow: 0 0 7px rgba(53, 8, 8, 0.3), 0 0 3px rgba(26, 31, 1, 0.3);
         }
 
-        .thir img {
-            border-radius: 50%;
+        .clg {
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 25%;
+            font-size: 60%;
         }
 
-        .thir img:hover {
-            background-color: rgb(162, 198, 160);
-        }
+        .animate-charcter {
 
-        .thir h1 {
-            text-decoration: none;
-            color: #000000;
+            text-transform: uppercase;
+            background-image: linear-gradient(-225deg,
+                    #231557 0%,
+                    #44107a 29%,
+                    #ff1361 67%,
+                    #fff800 100%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 3s linear infinite;
+            display: inline-block;
             font-size: xx-large;
+
         }
 
-        .thir h1:hover {
-            background-color: rgb(162, 198, 160);
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+
+        .pro a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 24px;
+        }
+
+        .pro p {
+            font-weight: 700;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #000, #fff, #000);
+            letter-spacing: 5px;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-repeat: no-repeat;
+            background-size: 80%;
+            animation: shine 5s linear infinite;
+            position: relative;
+        }
+
+        @keyframes shine {
+            0% {
+                background-position-x: -500%;
+            }
+
+            100% {
+                background-position-x: 500%;
+            }
+        }
+
+
+        .ab h2 {
+            color: white;
+            padding-bottom: 20%;
+            padding-left: 20%;
+            padding-right: 20%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .ab h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding-top: 20%;
+            animation: backwards;
+        }
+
+        .Resume {
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 200%;
+            padding: 10%;
+            padding-bottom: 20%;
+        }
+
+        .Resume a {
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+        }
+
+        .Resume a ::before,
+        .Resume a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+
+        .Resume a::before {
+            background-color: #6cd8ff;
+            height: 2px;
+            bottom: 0;
+            transform-origin: 100% 50%;
+            transform: scaleX(0);
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+
+        .Resume a::after {
+            content: attr(data-replace);
+            height: 100%;
+            top: 0;
+            transform-origin: 100% 50%;
+            transform: translate3d(200%, 0, 0);
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+            color: #68d7ff;
+        }
+
+        .Resume a:hover::before {
+            transform-origin: 0% 50%;
+            transform: scaleX(1);
+        }
+
+        .Resume a:hover::after {
+            transform: translate3d(0, 0, 0);
+        }
+
+        .Resume a span {
+            display: inline-block;
+            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+
+        .Resume a:hover span {
+            transform: translate3d(-200%, 0, 0);
+        }
+
+        /* Presentational Styles */
+
+
+        .Resume a {
+            text-decoration: none;
+            color: #ffa54b;
+            font-weight: 700;
+            vertical-align: top;
         }
 
         .last {
-            margin: 20px;
-            background: rgb(162, 198, 160);
-            padding: auto;
-        }
-        .end{
-            margin: 200px;
+            color: white;
+            text-align: center;
         }
 
-        footer {
-            width: 100%;
-
-            bottom: 0;
-            left: 0;
-            background: rgb(162, 198, 160);
+        img {
+            width: 3%;
+            padding-left: 4%;
+            padding-right: 4%;
+            padding-bottom: 5%;
         }
-
-        .cont {
-            text-decoration: none;
-
-            display: flex;
-            padding: 20px;
-        }
-
-        .cont a {
-            color: black;
-        }
-
-        footer a {
-            transition: all 0.3s ease;
-        }
-
-        footer a:hover {
-            color: #ffffff;
+       
+            
+        
+        .Mail:hover {
+            color: #aab7bc;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <div id="home">
+        <header>
+            <nav>
 
-            <div class="right">
-                <h1>Nishanka Das</h1>
-            </div>
-            <div class="left">
-                <ul>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#res">Resume</a></li>
-                    <li><a href="#proj">Project</a></li>
-                    <li><a href="#Conta">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div class="rig">
-                <form aria-setsize="20px">Hi!</form> <br>
-                I am <span class="green">Nishanka</span>,<br>
-                Computer Science Student at Ramakrishna Mission
-                Vivekananda Centenary College
-            </div>
-            <div class="lef">
-                <img src="orgpic.jpeg" alt="Picture" width="500" align="center">
 
-            </div>
-        </section>
-        <section class="sec">
-            <a id="About">
-                <div class="bg">
-                    <h2 align=center>
-                        <div class="intro">
-                            <p>
-                                <font size="+3">Intro</font>
-                                <br><br>I am currently persuing an undergraduate degree at the esteemed institution
-                                as mentioned in my profile, I have practical knowledge in various programming
-                                languages likes C,C++,Python, R and HTML and CSS in Web Development.
-                                I am Phsychoinformatics enthusisat which I'm currently studying along with my college
-                                curriculum.
-                                I have also worked a bit using Arduino Uno .
-                            <h2>
-                        </div>
+                <div class="left">
+                    <ul>
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#About"> About </a></li>
+                        <li><a href="#res"> Resume </a></li>
+                        <li><a href="#Conta"> Contact </a></li>
+                    </ul>
                 </div>
-            </a>
-        </section>
-        <section class="thir">
-            <a id="res">
-                <p align="center">
-                    <a href="NISHANKA DAS.pdf"><img src="vc1.png" alt="Resume" width="400px"><br></a>
-                    <h1 align="center">RESUME</h1>
-                </p>
-            </a>
-        </section>
-        <section class="end">
-            <a id="proj">
-                <img src="download.jpg" alt="Projects">
-            </a>
-        </section>
-    </main>
-    <footer>
-        <div class="cont">
-            <a id="Conta">
-                <p>Contact<br>
-            </a>
-           
-            <a href="#">nishanka2004@gmail.com</a><br>
-            <a href="#">www.linkedin.com/in/nishanka-das-657476250</a>
-            </p>
-        </div>
-    </footer>
-</body>
+            </nav>
+        </header>
+        <main>
+            <section class="About">
 
+                <div class="container">
+                    <div class="row">
+                        <h3>Hi!<br> It's Me </h3>
+                        <div class="col-md-12 text-center">
+                            <h1 class="animate-charcter">NISHANKA </h1>
+                        </div>
+                        <div class="clg">
+                            <h3>Computer Science Student at Ramakrishna Mission Vivekananda Centenary College</h3>
+                        </div>
+                        <div class="pro">
+                            <p>Welcome to my profile</p>
+                        </div>
+
+
+                    </div>
+            </section>
+        </main>
+    </div>
+    <div id="About" class="ab">
+        <h1>
+
+            About
+
+        </h1>
+        <h2>I am currently persuing an undergraduate degree at the esteemed institution as mentioned in my profile,
+            I have practical knowledge in various programming languages likes C,C++,Python,
+            R and HTML and CSS in Web Development. I am Phsychoinformatics enthusisat which I'm
+            currently studying along with my college curriculum.
+            I have also worked a bit using Arduino Uno .</h2>
+    </div>
+    <div id="res" class="Resume">
+        <p>Download <a href="NISHANKA DAS.pdf" id="style-2" data-replace="this link"><span>Resume</span></a></p>
+    </div>
+    <div id="Conta" class="last">
+        <footer>
+            <div class="yes">
+                <a href="https://www.facebook.com/nishanka.das.712"><img src="fb.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/nishanka-das-657476250/"><img src="linkdin.png" alt="Linkdin"></a>
+                <a href="#mail"><img src="mail.png"></a>
+                <a href="https://github.com/NishankaDas"><img src="git.png" alt="GitHub"></a>
+            </div>
+            <div id="mail" class="Mail">
+                nishanka2004@gmail.com
+            </div>
+            <p>Copyright© by Nishanka
+            </p>
+        </footer>
+    </div>
+</body>
 </html>
